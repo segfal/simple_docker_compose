@@ -40,5 +40,5 @@ Some of the technologies and languages tested in this repository include:
 
 This repository is a personal experiment with Docker, exploring how it manages different types of services and technologies. It’s not intended for external use or collaboration. The focus is on pushing Docker’s boundaries, not on building functional applications.
 
-This README should make it clear to anyone who comes across the repo that it’s not for external use, and that its purpose is mainly exploratory.
+
 
