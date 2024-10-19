@@ -1,0 +1,52 @@
+version: '3'
+services:
+  # Node 1 - TypeScript Frontend or Server
+  node1:
+    build: ./node1
+    ports:
+      - "3000:3000"
+    depends_on:
+      - node2
+      - node3
+
+  # Node 2 - Go Service
+  node2:
+    build: ./node2
+    depends_on:
+      - node4
+      - node5
+
+  # Node 3 - Python Service
+  node3:
+    build: ./node3
+    depends_on:
+      - node6
+      - node7
+
+  # Node 4 - C++ Service
+  node4:
+    build: ./node4
+
+  # Node 5 - Custom PostgreSQL for Node 2 (Go)
+  node5:
+    build: ./node5
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: dbnode5
+    ports:
+      - "5432:5432"
+
+  # Node 6 - Go Service (similar to Node 2)
+  node6:
+    build: ./node6
+
+  # Node 7 - Custom PostgreSQL for Node 3 (Python)
+  node7:
+    build: ./node7
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: dbnode7
+    ports:
+      - "5433:5432"
