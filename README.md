@@ -27,8 +27,17 @@ This repository includes experiments with:
 - Database systems (e.g., PostgreSQL)
 - Different service configurations and interactions
 
+## AI-Generated Content
+
+It's important to note that a significant portion of this repository's content is AI-generated:
+
+- **Code and Dockerfiles**: Many of the code snippets and Dockerfiles were generated using AI tools like ChatGPT.
+- **This README**: Even this README file was created with the assistance of AI.
+
+This AI-generated content further emphasizes the experimental nature of this repository and its unsuitability for practical use by others.
+
 ## Final Note
 
-
+If you've stumbled upon this repository, please understand that it's not meant for you. It's my personal Docker learning journey. Feel free to create your own experiments, but please do not use, clone, or fork this repository.
 
 Remember: This is a personal playground, not a collaborative project or a source of working examples. Cloning or forking this repository will only lead to confusion and technical difficulties. You have been warned!
