@@ -26,11 +26,15 @@ docker system prune -a
 <hr/>
 
 ## Visual explanation
+```mermaid
+graph TD
+    A[Docker Compose / Kubernetes Environment]
+
+```
 
 ```mermaid
 graph TD
-    %% Subgraph representing Docker Compose and Kubernetes environment
-    subgraph Docker Compose / Kubernetes
+    subgraph Project Structure
         python_service[Python Service - Flask API]
         go_service[Go Service - HTTP Client]
         cpp_service[C++ Service - Factorial Calculator]
@@ -44,9 +48,4 @@ graph TD
     style python_service fill:#FFDDC1,stroke:#333,stroke-width:2px,color:#000;
     style go_service fill:#D4E157,stroke:#333,stroke-width:2px,color:#000;
     style cpp_service fill:#4FC3F7,stroke:#333,stroke-width:2px,color:#000;
-    
-    %% Make sure the subgraph label is visible and correct
-    classDef title fill:#2F4F4F,stroke:#000,stroke-width:0px,color:#fff;
-    class Docker_Compose / Kubernetes title;
 ```
-
